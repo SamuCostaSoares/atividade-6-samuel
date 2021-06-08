@@ -241,3 +241,43 @@ $ git tag
 v1.0
 v1.1
 
+samuc@LAPTOP-1UVA8F1I MINGW64 ~/Documents/atividade-6-samuel (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+samuc@LAPTOP-1UVA8F1I MINGW64 ~/Documents/atividade-6-samuel (main)
+$ git add .
+
+samuc@LAPTOP-1UVA8F1I MINGW64 ~/Documents/atividade-6-samuel (main)
+$  git commit -m "arquivo readme"
+[main 54ce073] arquivo readme
+ 1 file changed, 243 insertions(+)
+
+samuc@LAPTOP-1UVA8F1I MINGW64 ~/Documents/atividade-6-samuel (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+samuc@LAPTOP-1UVA8F1I MINGW64 ~/Documents/atividade-6-samuel (main)
+$ git push -u origin main --tags
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.95 KiB | 285.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shimu192/atividade-6-samuel.git
+   dd9a2a6..54ce073  main -> main
+ * [new tag]         v1.1 -> v1.1
+Branch 'main' set up to track remote branch 'main' from 'origin'.
